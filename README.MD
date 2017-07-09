@@ -1,11 +1,19 @@
-test3oauth2
+
+2017 0709 how to use postman:
+- select POST then input this to url:
+--- http://localhost:8080/ssomyeis/oauth/token?grant_type=password&username=user&password=user
+- select basic authentication then input this as client name / client password respectively:
+--- jml-client-id / 12345
+- hit Send button
+
+
 
 spring boot 1.5.3, oauth2, mysql for users
 
 
 
 - get new token:
-http://localhost:8080/oauth/token?grant_type=password&username=user&password=user
+    http://localhost:8080/oauth/token?grant_type=password&username=user&password=user
 -result:
 {
   "access_token": "92c57523-f51b-4d0f-8ffc-0d140ac3b44d",

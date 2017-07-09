@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.jml.myeis</groupId>
-	<artifactId>ssomyeis</artifactId>
+	<artifactId>ssomyeis1oauth2test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
