@@ -20,7 +20,7 @@
 
 
 - refresh token:
-- http://localhost:8080/ssomyes/oauth/token?grant_type=refresh_token&client_id=my-trusted-client&refresh_token=b164efc6-f730-4796-ad70-6daa5d48b6a4&client_secret=secret
+- http://localhost:8080/ssomyes/oauth/token?grant_type=refresh_token&client_id=jml-client-id&refresh_token=b164efc6-f730-4796-ad70-6daa5d48b6a4&client_secret=123
 
 
   change
