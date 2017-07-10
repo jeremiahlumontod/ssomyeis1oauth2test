@@ -1,5 +1,37 @@
 
 2017 0709 how to use postman:
+
+postman test for deployed war in ubuntu:
+
+
+- select POST then input this to url:
+--- http://192.168.1.114:8080/ssomyeis/oauth/token?grant_type=password&username=user&password=user
+- select basic authentication then input this as client name / client password respectively:
+--- jml-client-id / 12345
+- hit Send button
+
+result:
+{
+    "access_token": "84cadfe3-ebe3-4353-8af1-65d15b02d6a9",
+    "token_type": "bearer",
+    "refresh_token": "d146fe94-18ea-4302-830e-763da282662e",
+    "expires_in": 29,
+    "scope": "trust read write"
+}
+
+> refresh token request:
+http://192.168.1.114:8080/ssomyeis/oauth/token?grant_type=refresh_token&client_id=jml-client-id&refresh_token=d146fe94-18ea-4302-830e-763da282662e&client_secret=12345
+result:
+{
+    "access_token": "255c4d01-5b7c-486f-b23b-77748a211190",
+    "token_type": "bearer",
+    "refresh_token": "d146fe94-18ea-4302-830e-763da282662e",
+    "expires_in": 29,
+    "scope": "trust read write"
+}
+
+
+
 - select POST then input this to url:
 --- http://localhost:8080/ssomyeis/oauth/token?grant_type=password&username=user&password=user
 - select basic authentication then input this as client name / client password respectively:
